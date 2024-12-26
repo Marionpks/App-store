@@ -1,0 +1,119 @@
+.app-container {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #041b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Centers the heading */
+  margin-bottom: 20px; /* Adjust margin to control the spacing */
+}
+
+.search-input-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.tab-item {
+  margin: 0 10px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab-button.active {
+  background: #007bff;
+  color: white;
+}
+
+.apps-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column width */
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 500px;
+  justify-items: center;
+  margin: 0 auto; /* Center the grid */
+  max-width: 500px; /* Restrict maximum width */
+}
+
+.app-item {
+  text-align: center;
+  margin: 15px;
+  width: 120px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.app-item a {
+  text-decoration: none !important; /* Remove underline from the anchor tag */
+}
+
+.app-item a .app-name {
+  text-decoration: none !important; /* Ensure app name doesn't get underlined */
+}
+
+.app-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.app-name {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-decoration: none !important; /* Remove underline from app name */
+  color: #333;
+}
+
+.app-box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
